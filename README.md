@@ -43,10 +43,22 @@ O layout fornecido não é muito complexo visualmente, nosso maior interesse é 
 
 ## Tecnologias que você pode utilizar
 
-Você é livre para utilizar qualquer framework JS que preferir, mas saiba que aqui na Bullcode por enquanto trabalhamos com Angular 4+
+Você é livre para utilizar qualquer framework JS que preferir, mas saiba que aqui na Bullcode por enquanto trabalhamos com Angular 6
 
 Você é livre para utilizar qualquer framework/biblioteca de CSS ou componente para auxiliar no desenvolvimento. No entando será observado a necessidade, o uso correto, a versão, se a a mesma é _open source_ e se é um projeto ativo.
 
 Você é livre de utilizar qualquer preprocessador de CSS também. Aqui na Bullcode utilizamos Sass (scss).
 
 Sobre _task manager_, _bundler_ e similares, fique à vontade, apenas pedimos que você **adicione instruções detalhadas sobre como rodar a aplicação**.
+
+
+## Como participar
+
+- Faça um _fork_ deste repositório e inicie a implementação
+- Quando finalizar nos envie um _Pull Request_ com seu nome e aguarde avaliação
+
+
+Quaisquer dúvidas referente ao teste podem ser tratatadas através do e-mail contato@bullcode.com.br.
+
+
+**Boa sorte!**

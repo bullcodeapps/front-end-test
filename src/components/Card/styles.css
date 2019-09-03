@@ -1,0 +1,21 @@
+.card {
+    width: 100%;
+    background: white;
+    padding: 4%;
+    border-radius: 15px;
+}
+
+.card h4 {
+    color: #99a0a7;
+    font-weight: 500;
+}
+
+.card h2 span {
+    color: #79828b;
+}
+
+.card h2 {
+    color: #42505c;
+    font-size: 1.625em; /*26px*/
+    font-weight: 600;
+}

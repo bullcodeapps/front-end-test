@@ -57,12 +57,12 @@
 
 .card-body .left-column {
     display: flex;
-    width: 30%;
+    width: 50%;
     flex-direction: column;
 }
 
 .card-body .right-column {
-    width: 70%;
+    width: 65%;
 }
 
 .card-footer {

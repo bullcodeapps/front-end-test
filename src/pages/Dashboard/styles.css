@@ -1,8 +1,9 @@
 .first-column {
     width: 60%;
     height: 100%;
-    position: absolute;
-    top: 25%;
+    margin-top: -10%;
+    /* position: absolute;
+    top: 25%; */
 }
 
 .profit-statistics h2 {

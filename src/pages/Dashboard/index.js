@@ -16,7 +16,6 @@ export default function Dashboard() {
         <div className="first-column">
           <Card
             className="d-flex flex-column justify-content-center"
-            width={100}
             height={30}>
             <div className="card-header">
               <h4 style={{ textTransform: 'uppercase' }}>Earnings</h4>
@@ -36,7 +35,7 @@ export default function Dashboard() {
               </div>
               <div className="right-column">
                 <Chart
-                  width={550}
+                  width={420}
                   height="100%"
                   chartType="LineChart"
                   loader={<div>Loading Chart</div>}
@@ -67,9 +66,9 @@ export default function Dashboard() {
             </div>
           </Card>
           <h3 className="medium-title">Suggested Projects</h3>
-          <div className="d-flex flex-row">
+          <div className="d-flex flex-row justify-content-space-between">
             <Card
-              width={50}
+              width={42}
               height={35}>
               <div className="card-header">
                 <div className="d-flex align-items-center">
@@ -103,7 +102,7 @@ export default function Dashboard() {
               </div>
             </Card>
             <Card
-              width={50}
+              width={42}
               height={35}>
               <div className="card-header">
                 <div className="d-flex align-items-center">

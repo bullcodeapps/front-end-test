@@ -3,3 +3,31 @@
     height: 100%;
     margin: 0 auto;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.m-top-0 {
+    margin-top: 0 !important;
+}
+
+.m-bottom-0 {
+    margin-bottom: 0 !important;
+}

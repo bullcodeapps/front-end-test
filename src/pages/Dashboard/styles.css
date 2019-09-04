@@ -4,3 +4,73 @@
     position: absolute;
     top: 25%;
 }
+
+.profit-statistics h2 {
+    color: #42505c;
+    font-size: 1.625em;
+    /*26px*/
+    font-weight: 600;
+}
+
+.profit-statistics h2 span {
+    color: #79828b;
+    margin-right: 0.2%;
+}
+
+.profit-statistics p {
+    color: #7e8790;
+}
+
+.profit-statistics p span {
+    color: #70daad;
+}
+
+.medium-title {
+    margin: 3% 0;
+    color: #42505c;
+    font-weight: 600;
+    font-size: 1.25em;
+    /*20px*/
+}
+
+.avatar {
+    width: 15%;
+    margin-right: 5%;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profile-info {
+    width: 60%;
+}
+
+.profile-info h5 {
+    color: #465460;
+    font-weight: 600;
+    font-size: 1em;
+    /*16px*/
+}
+
+.profile-info p {
+    font-size: 0.75em;
+    /*12px*/
+    color: #838c94;
+}
+
+.programmingLanguage {
+    width: 30%;
+    text-align: center;
+    border-radius: 34px;
+    padding: 5px;
+}
+
+.gray {
+    background-color: #f1f2f3;
+}
+
+.programmingLanguage h4 {
+    color: #909ca6 !important; 
+}

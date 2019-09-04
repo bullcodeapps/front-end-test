@@ -64,6 +64,7 @@ export default function Dashboard() {
                 />
               </div>
             </div>
+
           </Card>
           <h3 className="medium-title">Suggested Projects</h3>
           <div className="d-flex flex-row justify-content-space-between">

@@ -1,0 +1,40 @@
+@import "partials/base";
+
+.formulario-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    form{
+        display: flex;
+        flex-direction: column;
+
+        input{
+            background: #eee;
+            color: $gray-light;
+            height: 35px;
+            font-size: 1em;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 7px;
+
+            &::placeholder{
+                color: $gray-light;
+            }
+
+            &[type="submit"]{
+                background: $purple;
+                font-weight: bold;
+                color: $white;
+                cursor: pointer;
+                padding: 0;
+
+                &:hover{
+                    background: $purple-dark;
+                }
+            }
+        }
+    }
+}

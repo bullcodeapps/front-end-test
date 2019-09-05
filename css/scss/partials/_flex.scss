@@ -1,0 +1,33 @@
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+@include breakpoint($break-medium){
+    .mobile-column{
+        flex-direction: column;
+    }
+
+    .mobile-align-center{
+        align-items: center;
+    }
+}

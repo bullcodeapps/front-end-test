@@ -1,0 +1,194 @@
+@import "compass";
+@import "susy";
+@import "reset";
+@import "breakpoint";
+@import "estrutura";
+@import "flex";
+
+$white: #fff;
+$off-white: #d2d4e8; 
+
+$purple: #5c6ac8;
+$purple-light: lighten($purple, 10);
+$purple-dark: darken($purple, 10);
+
+$gray-light: #79828b;
+$gray-dark: #42505c;
+
+$green: #19c47b;
+
+$orange: #d39268;
+
+@mixin clearfix() {
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.clear{
+    @include clearfix();
+}
+
+html, body{
+    background: #f5f7f9;
+    font-size: 16px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    @include breakpoint($break-medium){
+        padding: 0 10px;
+    }
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.placeholder-label{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #e4e4e4;
+    
+    @include breakpoint($break-medium){
+        margin-bottom: 20px;
+    }    
+}
+
+@include breakpoint($break-medium){
+    .hide-mobile{
+        display: none;
+    }
+}
+
+.panel{
+    background: white;
+    border-radius: 7px;
+    padding: 20px;
+    box-shadow: 0 3px 4px #b7b7b7;
+
+    @include breakpoint($break-medium){
+        margin-bottom: 20px;
+    }
+
+    h3{
+        color: $gray-light;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .info-important{
+        font-size: 1.8em;
+        font-weight: bold;
+        color: $gray-dark;
+        margin-bottom: 5px;
+
+        &.info-important-small{
+            font-size: 1.2em;
+        }
+    }
+
+    .info-text{
+        font-size: 0.9em;
+        color: $gray-light;
+        margin-bottom: 20px;
+    }
+
+    .label{
+        color: $gray-light;
+        font-weight: normal;
+    }
+
+    .icon{
+        background: $purple;
+        color: $white;
+        font-size: 0.6em;
+        padding: 5px;
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .green{
+        color: $green;
+    }
+
+    .tag{
+        padding: 7px 10px;
+        border-radius: 20px;
+        width: max-content;
+
+        &.purple{
+            background: #eff0fa;
+            color: $purple;
+        }
+
+        &.orange{
+            background: #faf2ef;
+            color: $orange;
+        }
+
+        &.neutral{
+            background:#f1f2f3;
+            color: $gray-light;
+        }
+
+        & + .tag{
+            margin-top: 10px;
+
+            @include breakpoint($break-medium){ 
+                margin-top: 0;
+            }
+        }
+    }
+
+    .panel-bottom{
+        border-top: 1px solid #e6ebf0;
+        padding: 20px 0 0;
+
+        .tag{
+            margin-right: 5px;
+        }
+    }
+
+    .author{
+        i{
+            font-size: 2em;
+            color: $purple;
+            margin-right: 10px;
+        }
+
+        .author-name{
+            color: $gray-dark;
+            font-weight: bold;
+        }
+
+        .author-info{
+            color: $gray-light;
+            font-size: 0.8em;
+            margin-top: 5px;
+
+            &.value{
+                font-size: 1em;
+            }
+        }
+    }
+
+    .description{
+        color: $gray-dark;
+        margin: 20px 0;
+        line-height: 1.5em;
+    }
+}

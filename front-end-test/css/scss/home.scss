@@ -1,0 +1,289 @@
+@import "partials/base";
+
+header{
+    background: #5c6ac8;
+    padding: 40px 0;
+
+    .mobile-menu{
+        display: none;
+        color: $white;
+        font-size: 1.2em;
+        
+        @include breakpoint($break-medium){
+            display: block;
+        }
+    }
+
+    .breadcrumb{
+        font-size: 1.2em;
+
+        .breadcrumb-principal{
+            color: #fff;
+        }
+
+        .breadcrumb-sub{
+            color: $purple-light;
+        }
+
+        @include breakpoint($break-medium){
+            display: none;
+        }
+    }
+
+    .user-area{
+        color: $white;
+        font-size: 1.2em;
+
+        .user-area-icon{
+            position: relative;
+            margin-right: 40px;
+
+            span{
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 0.6em;
+                background: $purple-dark;
+                padding: 10px;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+
+            @include breakpoint($break-medium){
+                display: none;
+            }
+        }
+
+        .user-area-icon-chevron{
+            font-size: 0.4em;
+            background: $purple-dark;
+            padding: 5px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+    }
+
+    nav{
+        width: 100%;
+        padding: 40px 0;
+
+        @include breakpoint($break-medium){
+            display: none;
+        }
+
+        ul{
+            li{
+                color: $off-white;
+                padding: 7px 10px;
+                margin: 0 5px;
+                cursor: pointer;
+                @include transition(0.3s);
+
+                &:hover, &.active{
+                    color: $white;
+                    background: $purple-light;
+                    border-radius: 1em;
+                }
+            }
+        }
+    }
+}
+
+section{
+
+    @include clearfix();
+
+    &:first-of-type{
+        margin-top: -40px;
+
+        @include breakpoint($break-medium){
+            margin-top: -20px;
+        }
+    }
+
+    &:last-of-type{
+        margin-bottom: 60px;
+    }
+
+    margin-top: 60px;
+
+    .section-title{
+        margin-bottom: 20px;
+
+        h2{
+            color: $gray-dark;
+
+            @include breakpoint($break-medium){
+                font-size: 1.2em;
+            }
+        }
+
+        a{
+            color: $gray-light;
+            text-transform: uppercase;
+            text-decoration: none;
+            margin-right: 20px;
+
+            @include breakpoint($break-medium){
+                margin-right: 0;
+            }
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.graph-holder{
+    @include breakpoint($break-medium){
+        flex-direction: column-reverse;
+    }
+
+    .graph-holder-tag{
+        flex-direction: column;
+
+        @include breakpoint($break-medium){
+            flex-direction: row;
+        }
+    }
+
+}
+
+.join-slack{
+    background: $purple-light;
+    border-radius: 7px;
+    padding: 40px;
+
+    .join-slack-logo{
+        font-size: 3em;
+        margin-right: 40px;
+
+        @include breakpoint($break-medium){
+            margin-right: 0;
+        }
+    }
+
+    .join-slack-text{
+        width: 60%;
+
+        @include breakpoint($break-medium){
+            width: 100%;
+            text-align: center;
+        }
+
+        .title{
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @include breakpoint($break-medium){
+                font-size: 1.1em;
+            }
+        }
+
+        .message{
+            color: $off-white;
+            line-height: 1.4em;
+
+            @include breakpoint($break-medium){
+                font-size: 0.9em;
+            }
+
+        }
+    }
+
+    .join-slack-logo,
+    .join-slack-text .title{
+        color: $white;
+    }
+
+    .join-slack-buttons{
+        width: 34%;
+
+        @include breakpoint($break-medium){
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button{
+            background: transparent;
+            color: $off-white;
+            font-size: 1em;
+            border-radius: 7px;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+
+            &.remind{
+                border: 1px solid $off-white;
+
+                &:hover{
+                    color: $white;
+                    background: $purple;
+                    border: none;
+                }
+            }
+
+            &.join{
+                background: $purple;
+                color: $white;
+
+                &:hover{
+                    background: $purple-dark;
+                }
+            }
+        }
+    }
+}
+
+.rankings{
+    .rankings-row{
+        color: $gray-dark;
+        padding: 20px 0;
+
+        &:last-child{
+            padding-bottom: 0;
+        }
+
+        &:not(:last-child){
+            border-bottom: 1px solid $off-white;
+        }
+
+        .value{
+            color: $gray-light
+        }
+
+        .rankings-position{
+            font-size: 1.3em;
+            width: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.timeline{
+    .timeline-row{
+        padding: 10px 0 0;
+
+        &:not(:last-child){
+            border-bottom: 1px solid $off-white;
+        }
+        .timeline-valueinfo{
+            padding: 10px 0;
+        }
+        
+        .timeline-when{
+            color: $gray-light;
+
+            @include breakpoint($break-medium){
+                display: none;
+            }
+        }
+    }
+}

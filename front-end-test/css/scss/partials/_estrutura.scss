@@ -1,0 +1,46 @@
+$break-medium: max-width 768px;
+$break-small: max-width 450px;
+
+.w30{
+    @include span(3 of 10);
+
+    &.last{
+        @include span(3 of 10 last);
+    }
+}
+
+.w33{
+    @include span(4 of 12);
+
+    &.last{
+        @include span(4 of 12 last);
+    }
+}
+
+.w70{
+    @include span(7 of 10);
+
+    &.last{
+        @include span(7 of 10 last);
+    }
+}
+
+.w30,.w33,.w70{
+    @include breakpoint($break-medium){
+        &,&.last{
+            @include span(full);
+        }
+    }
+}
+
+.w50{
+    @include span(5 of 10);
+
+    &.last{
+        @include span(5 of 10 last);
+    }
+}
+
+.w100{
+    @include span(full);
+}

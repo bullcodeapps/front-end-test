@@ -1,15 +1,15 @@
 .first-column {
-    width: 60%;
+    width: 65%;
     height: 100%;
-    margin-top: -10%;
-    /* position: absolute;
-    top: 25%; */
+}
+
+.second-column {
+    width: 32%;
 }
 
 .profit-statistics h2 {
     color: #42505c;
-    font-size: 1.625em;
-    /*26px*/
+    font-size: 1.625em; /*26px*/
     font-weight: 600;
 }
 
@@ -44,6 +44,19 @@
     border-radius: 50%;
 }
 
+.avatar .icon-wrapper {
+    display: flex;
+    border-radius: 50%;
+}
+
+.avatar .icon-wrapper-purple {
+    background-color: #eff0fa
+}
+
+.avatar .icon-wrapper-green {
+    background-color: #cff3e3
+}
+
 .profile-info {
     width: 60%;
 }
@@ -74,4 +87,116 @@
 
 .programmingLanguage h4 {
     color: #909ca6 !important; 
+}
+
+.budget {
+    display: flex;
+    align-items: center;
+}
+
+.budget h4 span {
+    font-weight: 600;
+    color: #79828b;
+    margin-right: 0.2%;
+}
+
+.budget h4 {
+    font-weight: 600;
+    color: #42505c;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: 20%; 
+    background-color: #92a0fe;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 0 5%;
+}
+
+.banner .img-wrapper {
+    width: 8%;
+}
+
+.banner .img-wrapper img {
+    width: 100%;
+}
+
+.banner .content {
+    width: 60%;
+    margin-left: 4%;
+}
+
+.banner .content h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.25em; /*20px*/
+}
+
+.banner .content p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em; /*16px*/
+}
+
+.banner .buttons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+    height: 100%;
+}
+
+.banner .buttons-wrapper .btn {
+    width: 48%;
+    height: 25%;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 1%;
+}
+
+.banner .buttons-wrapper .btn-no-bg {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.banner .buttons-wrapper .btn-purple {
+    background: #6574d6;
+    border: 1px solid #6574d6;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;    
+}
+
+.bottom-text {
+    font-size: 1.125em; /*18px*/
+}
+
+.bottom-text-bold {
+    color: #42505c;
+    font-weight: 600;
+}
+
+.bottom-text-thin {
+    font-weight: 500;
+    color: #79828b;
+    letter-spacing: 0.5px;
+}
+
+.filter p{
+    font-size: 0.75em; /*12px*/
+    color: #a5abb1;
+    width: 55%;
+}
+
+.filter p span {
+    width: 45%;
+    margin-left: 5%;
+    color: #6271d2;
 }

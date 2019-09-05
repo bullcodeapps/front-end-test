@@ -1,0 +1,101 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Alice Martin",
+            "postedTime": "5 hours ago",
+            "programmingLanguage": "html",
+            "description": "Design and develop a website for an education platform focusing on the growth of children.",
+            "ethBudget": "1.2",
+            "btcBudget": "0.3",
+            "$budget": "760"
+        },
+        {
+            "id": 2,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Alberto Donko",
+            "postedTime": "Yesterday, 9:40pm",
+            "programmingLanguage": "ruby",
+            "description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "ethBudget": "3",
+            "btcBudget": "1",
+            "$budget": "3360"
+        },
+        {
+            "id": 3,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Alexander Goe",
+            "postedTime": "Yesterday, 2:00pm",
+            "programmingLanguage": "ruby",
+            "description": "Scrambled it to make a type specimen book. It has survived not only five centuries",
+            "ethBudget": "1",
+            "btcBudget": "0.2",
+            "$budget": "620"
+        }
+    ],
+    "recentActivity": [
+        {
+            "id": 1,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Daniel Belu",
+            "postedTime": "1 hour ago",
+            "programmingLanguage": "ruby",
+            "description": "Received $760 for a Ruby project.",
+            "ethBudget": "1.2",
+            "btcBudget": "",
+            "$budget": "760",
+            "icon": "dolar"
+        },
+        {
+            "id": 2,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Christophe F. Batista",
+            "postedTime": "3 hours ago",
+            "programmingLanguage": "html",
+            "description": "Received $620 for a html project.",
+            "ethBudget": "",
+            "btcBudget": "0.2",
+            "$budget": "620",
+            "icon": "dolar"
+        },
+        {
+            "id": 3,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Alice Martin",
+            "postedTime": "5 hours ago",
+            "programmingLanguage": "html",
+            "description": "Submitted a project in html.",
+            "ethBudget": "",
+            "btcBudget": "0.3",
+            "$budget": "760",
+            "icon": "code"
+        }
+    ],
+    "ranking": [
+        {
+            "id": 1,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Mathew John",
+            "$budget": "10938.34"
+        },
+        {
+            "id": 2,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Daniel Belu",
+            "$budget": "9087.10"
+        },
+        {
+            "id": 3,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Elizabeth Kin",
+            "$budget": "6789.90"
+        },
+        {
+            "id": 4,
+            "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
+            "username": "Arosuh Uyt",
+            "$budget": "6009.00"
+        }
+    ]
+}

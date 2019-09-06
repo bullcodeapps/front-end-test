@@ -1,4 +1,9 @@
 {
+    "earnings": {
+        "$budget": "2879.90",
+        "ethBudget": "0.9087",
+        "btcBudget": "0.5"
+    },
     "projects": [
         {
             "id": 1,
@@ -96,6 +101,20 @@
             "avatar": "https://api.adorable.io/avatars/55/abott@adorable.pngCo",
             "username": "Arosuh Uyt",
             "$budget": "6009.00"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "Luis",
+            "email": "luis@mail.com",
+            "password": "1234"
+        },
+        {
+            "id": 2,
+            "name": "Teste",
+            "email": "teste@mail.com",
+            "password": "1234"
         }
     ]
 }

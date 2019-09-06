@@ -1,47 +1,9 @@
-.container {
-    width: 1100px;
-    height: 100%;
-    margin: 0 auto;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column !important;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.justify-content-space-between {
-    justify-content: space-between;
-}
-
-.justify-content-end {
-    justify-content: flex-end;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
 .m-top-0 {
     margin-top: 0 !important;
 }
 
 .m-bottom-0 {
     margin-bottom: 0 !important;
-}
-
-.w-100 {
-    width: 100%;
 }
 
 .w-50 {
@@ -58,4 +20,12 @@
 
 .col-32 {
     width: 32%;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.border-radius-15 {
+    border-radius: 15px;
 }

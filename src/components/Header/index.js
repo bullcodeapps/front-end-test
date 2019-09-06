@@ -11,16 +11,35 @@ export default function Header() {
     return (
         <div className="wrapper">
             <div className="container">
-                <div className="row">
+                <div className="desktop">
+                    <div className="header-row">
+                        <div className="text-wrapper">
+                            <h3>Dash <span>Elements</span></h3>
+                        </div>
+                        <div className="profile-wrapper">
+                            <div className="content">
+                                <FaBell
+                                    className="bell-icon"
+                                    color="#fff"
+                                    size={24} />
+                                <h3>Luis</h3>
+                                <div className="icon-wrapper">
+                                    <MdKeyboardArrowDown
+                                        color="#fff"
+                                        size={22} />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <Menu />
+                </div>
+
+                <div className="header-row mobile">
                     <div className="text-wrapper">
-                        <h3>Dash <span>Elements</span></h3>
+                        <Menu />
                     </div>
                     <div className="profile-wrapper">
                         <div className="content">
-                            <FaBell
-                                className="bell-icon"
-                                color="#fff"
-                                size={24} />
                             <h3>Luis</h3>
                             <div className="icon-wrapper">
                                 <MdKeyboardArrowDown
@@ -30,9 +49,7 @@ export default function Header() {
                         </div>
                     </div>
                 </div>
-                <Menu />
             </div>
         </div>
-
     )
 }

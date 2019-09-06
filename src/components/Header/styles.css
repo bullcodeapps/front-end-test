@@ -6,7 +6,7 @@
     background-color: #6170d1;
 }
 
-.row {
+.header-row {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -15,22 +15,24 @@
     margin-bottom: 3%;
 }
 
-.row .text-wrapper {
+.header-row .text-wrapper {
     width: 80%;
 }
 
-.row .text-wrapper h3 {
+.header-row .text-wrapper h3 {
     font-weight: 400;
     color: #fff;
     font-size: 1.375em;
     /*22px*/
 }
 
-.row .text-wrapper h3 span {
+.header-row .text-wrapper h3 span {
     color: #969fdd;
 }
 
 .profile-wrapper {
+    display: flex;
+    justify-content: flex-end;
     width: 20%;
 }
 
@@ -43,8 +45,8 @@
 .profile-wrapper .content .icon-wrapper {
     display: flex;
     align-content: center;
-    width: 10%;
-    height: 1%;
+    width: auto;
+    height: auto;
     background: #5a6abc;
     border-radius: 50%;
 }
@@ -59,4 +61,53 @@
     font-size: 1.375em;
     /*22px*/
     margin-right: 10%;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 479px) {
+    .wrapper {
+        height: 25%;
+    }
+    .profile-wrapper .content .icon-wrapper {
+        width: unset;
+    }
+    .mobile {
+        display: flex;
+    }
+    .desktop {
+        display: none;
+    }
+    .profile-wrapper .content {
+        width: 100%;
+    }
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .wrapper {
+        height: 25%;
+    }
+    .profile-wrapper .content .icon-wrapper {
+        width: unset;
+    }
+    .mobile {
+        display: flex;
+    }
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .mobile {
+        display: none !important;
+    }
+    .desktop {
+        display: block;
+    }
+    .profile-wrapper .content {
+        width: 50%;
+    }
 }

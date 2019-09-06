@@ -1,4 +1,4 @@
-.header-menu ul{
+.header-menu ul {
     display: inline-block;
     width: 100%;
     margin: 0;
@@ -9,7 +9,7 @@
 .header-menu ul li {
     float: left;
     margin-right: 2.5%;
-    width: 9%;
+    width: 12%;
     text-align: center;
     border-radius: 24px;
     padding: 2px;
@@ -18,7 +18,8 @@
 .header-menu ul li a {
     color: #fff;
     font-weight: 500;
-    font-size: 1.0625em; /*17px*/
+    font-size: 1.0625em;
+    /*17px*/
     text-decoration: none;
 }
 
@@ -28,4 +29,38 @@
 
 .active a {
     font-weight: 600;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 479px) {
+    .mobile-menu {
+        display: block;
+    }
+    .header-menu ul {
+        display: none !important;
+    }
+}
+
+/*Tablet*/
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    .header-menu ul {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+    .header-menu ul {
+        display: block !important;
+    }
+    .header-menu ul li {
+        width: 16%;
+    }
 }

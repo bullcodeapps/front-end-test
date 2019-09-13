@@ -1,0 +1,244 @@
+header {
+	padding: 40px 0px;
+	background-color: var(--theme-color);
+	color: #ffffff;
+	margin-bottom: -60px;
+}
+
+header > .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-mobile {
+	display: none;
+}
+
+.mobile-logo {
+	display: none;
+}
+
+.interactions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.notifications {
+	width: 40px;
+	height: 40px;
+	background: url('./icons/bell.svg') center center no-repeat;
+	background-size: 60%;
+	border-radius: 50%;
+	position: relative;
+	cursor: pointer;
+}
+
+.notifications .not-counter {
+	display: none;
+}
+
+.notifications .notifications-list {
+	position: absolute;
+	min-width: 240px;
+	max-width: 240px;
+	right: 0;
+	border-radius: var(--border-radius);
+	box-shadow: var(--shadow);
+	background-color: #ffffff;
+	overflow: hidden;
+	transition: var(--transition);
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+	transform: translate3d(50%, 0, 0);
+}
+
+.notifications.active .notifications-list {
+	visibility: visible;
+	opacity: 1;
+	z-index: 99;
+	transform: translate3d(50%, 50px, 0);
+}
+
+.notifications .notifications-list a {
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #666666;
+	padding: 10px 20px;
+	font-size: 14px;
+	transition: var(--transition);
+}
+
+.notifications .notifications-list a + a {
+	border-top: 1px solid #e2e2e2;
+}
+
+.notifications .notifications-list a:hover {
+	background-color: var(--theme-color-darker);
+	color: #ffffff;
+}
+
+.not-counter.contain {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: var(--theme-color-darker);
+	position: absolute;
+	top: -5px;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.menu-dropdown {
+	min-width: 100px;
+	margin-left: 30px;
+	position: relative;
+}
+
+.menu-dropdown .activator {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+	height: 40px;
+}
+
+.activator .dropdown-icon {
+	width: 15px;
+	height: 15px;
+	background: url('./icons/chevron-down.svg') center center no-repeat var(--theme-color-darker);
+	border-radius: 50%;
+	background-size: 85%;
+}
+
+.menu-dropdown .dropdown-item {
+	background-color: white;
+	border-radius: var(--border-radius);
+	color: var(--theme-color);
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	min-width: 200px;
+	box-shadow: var(--shadow);
+	opacity: 0;
+	transform: translateY(-30px);
+	visibility: hidden;
+	z-index: -1;
+	transition: var(--transition);
+}
+
+.menu-dropdown.active .dropdown-item {
+	opacity: 1;
+	transform: translateY(10px);
+	visibility: visible;
+	z-index: 9;
+}
+
+.menu-dropdown .dropdown-item a {
+	display: block;
+	padding: 20px 20px;
+	transition: var(--transition);
+}
+
+.menu-dropdown .dropdown-item a:hover {
+	background-color: var(--theme-color);
+	color: #ffffff;
+}
+
+.menu-dropdown .dropdown-item li + li {
+	border-top: 1px solid rgb(96, 111, 209, 0.3);
+}
+
+nav {
+	font-weight: 600;
+	padding: 30px 0px 60px;
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+}
+
+nav ul li + li {
+	margin-left: 10px;
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px 15px;
+	transition: var(--transition);
+}
+
+nav ul li a.active, nav ul li a:hover {
+	background-color: var(--theme-color-lighter);
+	border-radius: 100px;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+	.logo-desktop {
+		display: none;
+	}
+	.mobile-logo {
+		display: block;
+	}
+	.logo {
+		padding-left: 60px;
+	}
+	.menu-mobile {
+		display: block;
+		width: 35px;
+		height: 35px;
+		background: url('./icons/menu.svg') center center no-repeat;
+		background-size: cover;
+		position: absolute;
+		cursor: pointer;
+	}
+	.menu-mobile svg {
+		width: 35px;
+		height: 35px;
+	}
+	nav {
+		overflow: hidden;
+		max-height: 0px;
+		padding: 0;
+		position: relative;
+		transition: var(--transition);
+	}
+	.navigation.active nav {
+		max-height: 1000px;
+		padding: 30px 0px 100px;
+		overflow: hidden;
+		position: unset;
+	}
+	nav ul {
+		flex-direction: column;
+		/* position: absolute; */
+		/* left: 0; */
+		/* right: 0; */
+		/* z-index: 99; */
+		background-color: var(--theme-color);
+		padding: 20px 0px;
+		align-items: unset;
+		text-align: center;
+	}
+	nav ul li {
+		padding: 0 20px;
+	}
+	nav ul li + li {
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+	header {
+		min-height: 250px;
+		margin-bottom: -120px;
+	}
+}

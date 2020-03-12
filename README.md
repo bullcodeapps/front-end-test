@@ -37,13 +37,13 @@ O layout fornecido não é muito complexo visualmente, nosso maior interesse é 
 ## Serão creditados pontos extras (nesta ordem) para 
 
 - Componentização dos elementos que se repetem
-- Utilização de modelos lógicos dos dados e mocks de dados
+- Utilização de modelos lógicos (ou interfaces) dos dados e mocks de dados
 - Utilização de mock de API REST
 - Testes unitários
 
 ## Tecnologias que você pode utilizar
 
-Você é livre para utilizar qualquer framework JS que preferir, mas saiba que aqui na Bullcode por enquanto trabalhamos com Angular 6
+Você é livre para utilizar qualquer framework JS que preferir, mas saiba que aqui na Bullcode trabalhamos com Angular e React.
 
 Você é livre para utilizar qualquer framework/biblioteca de CSS ou componente para auxiliar no desenvolvimento. No entando será observado a necessidade, o uso correto, a versão, se a a mesma é _open source_ e se é um projeto ativo.
 
